@@ -1,0 +1,22 @@
+export * from './lib/common_pb';
+export * from './lib/control_pb';
+export * from './lib/command_pb';
+export * from './lib/query_pb';
+export * from './lib/event_pb';
+import * as control_grpc_pb from './lib/control_grpc_pb';
+import * as command_grpc_pb from './lib/command_grpc_pb';
+import * as query_grpc_pb from './lib/query_grpc_pb';
+import * as event_grpc_pb from './lib/event_grpc_pb';
+export declare type PlatformService = control_grpc_pb.PlatformServiceClient;
+export declare type CommandService = command_grpc_pb.CommandServiceClient;
+export declare type QueryService = query_grpc_pb.QueryServiceClient;
+export declare type EventStore = event_grpc_pb.EventStoreClient;
+export declare type EventScheduler = event_grpc_pb.EventSchedulerClient;
+export declare type AxonClient = {
+    PlatformService: typeof control_grpc_pb.PlatformServiceClient;
+    CommandService: typeof command_grpc_pb.CommandServiceClient;
+    QueryService: typeof query_grpc_pb.QueryServiceClient;
+    EventStore: typeof event_grpc_pb.EventStoreClient;
+    EventScheduler: typeof event_grpc_pb.EventSchedulerClient;
+};
+export declare function loadAxonClient(loadProto: (def: any) => any): AxonClient;

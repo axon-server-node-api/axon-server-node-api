@@ -1,0 +1,25 @@
+{
+  "name": "axon-server-node-api",
+  "version": "4.4.0",
+  "repository": {
+    "url": "https://github.com/axon-server-node-api/axon-server-node-api.git"
+  },
+  "main": "index.js",
+  "types": "index.d.ts",
+  "dependencies": {
+    "@types/google-protobuf": "^3.7.2",
+    "google-auth-library": "^6.0.5",
+    "google-protobuf": "^3.12.2"
+  },
+  "peerDependencies": {
+    "@grpc/grpc-js": "^1.1.7",
+    "@types/node": ">=10.0.0"
+  },
+  "devDependencies": {
+    "@grpc/grpc-js": "^1.1.7",
+    "@types/node": "^14.0.23",
+    "grpc-tools": "^1.9.1",
+    "grpc_tools_node_protoc_ts": "^5.0.1",
+    "typescript": "^3.9.7"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES5",
+    "allowJs": true,
+    "declaration": true
+  },
+  "include": ["index.ts", "lib/*"],
+  "exclude": ["node_modules"]
+}
